@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Business Card Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <h1>Business Card Generator</h1>
+
+
+    <form>
+
+
+        <!-- Personal Information -->
+
+        <div>
+
+            <h3>Personal Information</h3>
+
+
+            <label>Name:</label>
+
+            <input type="text" id="name" required>
+
+            <br><br>
+
+
+            <label>Education:</label>
+
+            <input type="text" id="education">
+
+            <br><br>
+
+
+            <label>Designation:</label>
+
+            <input type="text" id="Designation">
+
+            <br><br>
+
+        </div>
+
+
+
+        <!-- Company Information -->
+
+        <div>
+
+            <h3>Company Information</h3>
+
+
+            <label>Company Name:</label>
+
+            <input type="text" id="companyName" required>
+
+            <br><br>
+
+
+            <label>Company Subtitle:</label>
+
+            <input type="text" id="companySubTitle">
+
+            <br><br>
+
+
+            <label>Company Logo:</label>
+
+            <input
+                type="file"
+                id="companyLogo"
+                accept="image/*"
+                required
+            >
+
+            <br><br>
+
+        </div>
+
+
+
+        <!-- Contact Information -->
+
+        <div>
+
+            <h3>Contact Information</h3>
+
+
+            <label>Phone:</label>
+
+            <input type="tel" id="phone" required>
+
+            <br><br>
+
+
+            <label>Email:</label>
+
+            <input type="text" id="email">
+
+            <br><br>
+
+
+            <label>Website:</label>
+
+            <input type="text" id="website">
+
+            <br><br>
+
+        </div>
+
+
+
+        <!-- Address Information -->
+
+        <div>
+
+            <h3>Address Information</h3>
+
+
+            <label>Registered Office:</label>
+
+            <br>
+
+            <textarea id="registeredOffice"></textarea>
+
+            <br><br>
+
+
+            <label>Branch Office:</label>
+
+            <br>
+
+            <textarea id="branchOffice"></textarea>
+
+            <br><br>
+
+        </div>
+
+
+
+        <!-- Generate Button -->
+
+        <div>
+
+            <button
+                type="button"
+                onclick="generateCard()"
+            >
+                Generate Card
+            </button>
+
+        </div>
+
+
+    </form>
+
+
+
+    <!-- Generated Card -->
+
+    <div id="card"></div>
+
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
